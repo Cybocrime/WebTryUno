@@ -1,0 +1,179 @@
+html, body {
+    min-height: 100%; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    max-width: 100%; /* Prevents overflow */
+    box-sizing: border-box; /* Apply box-sizing to all elements */
+    overflow-x: hidden;
+}
+
+.container {
+    display: inline-grid;
+    grid-template-columns: repeat(3, auto); /* Always 3 columns */
+    gap: 167px; /* Default gap */    
+    border: 3px solid red;
+    width: 440px;
+}
+
+.cont {
+    display: grid;
+    grid-template-columns:1fr 1fr; /* Adjust icon size */
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+ 
+.titlediv {
+    border: 3px solid red;
+    width: 500px;
+    
+}
+
+.title {
+    font-size: 24px;
+}
+.item, .mer {
+  width: 35px; /* Default icon size */
+  height: 35px;
+}
+
+/* Extra-Large Desktops (1441px to 2560px) */
+@media (min-width: 1096px) and (max-width: 2150px){
+    .container {
+       
+        gap: 167px; /* Default gap */    
+        width: 439px;
+        padding-right: 50px;
+        justify-self: end; /* Align to the end (right) */
+      
+    }
+    
+    .cont {
+        grid-template-columns:1fr 1fr; /* Adjust icon size */ 
+      }
+      
+     
+    .titlediv {
+        width: 400px;
+        padding-left: 50px;
+        justify-self: start; /* Align to the start (left) */
+
+
+       
+        
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    .item, .mer {
+      width: 35px; /* Default icon size */
+      height: 35px;
+    }
+    
+  }
+
+  @media (min-width: 496px) and (max-width: 1095px){
+    .container {
+        gap: 75px; /* Default gap */    
+        width: 246px;      
+        padding-right: 10px;
+        justify-self: end; /* Align to the end (right) */ 
+        
+    }
+    
+    .cont {
+        grid-template-columns:1fr 1fr; /* Adjust icon size */
+       
+       
+      }
+      
+     
+    .titlediv {
+        width: 200px;
+        padding-left: 10px;
+        justify-self: start; /* Align to the start (left) */
+
+
+       
+        
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    .item, .mer {
+      width: 32px; /* Default icon size */
+      height: 32px;
+    }
+    
+  }
+
+  @media (min-width: 307px) and (max-width: 495px){
+    .container {
+        gap: 103px; /* Default gap */    
+        width: 290px;
+        justify-self: center;      
+    }
+    
+    .cont {
+        grid-template-columns:1fr; /* Adjust icon size */
+        gap: 10px;
+       
+      }
+      
+     
+    .titlediv {
+        width: 200px;
+        justify-self: center;
+    }
+    
+    .title {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .item, .mer {
+      width: 28px; /* Default icon size */
+      height: 28px;
+    }
+    
+  }
+
+  @media (max-width: 306px){
+    .container {
+        gap: 60px; /* Default gap */    
+        width: 204px;
+        justify-self: center;
+       
+        
+    }
+    
+    .cont {
+        grid-template-columns:1fr; /* Adjust icon size */
+        gap: 10px;
+       
+      }
+      
+     
+    .titlediv {
+        width: 200px;
+        justify-self: center;
+    }
+    
+    .title {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .item, .mer {
+      width: 28px; /* Default icon size */
+      height: 28px;
+    }
+    
+  }
+
+
+  
